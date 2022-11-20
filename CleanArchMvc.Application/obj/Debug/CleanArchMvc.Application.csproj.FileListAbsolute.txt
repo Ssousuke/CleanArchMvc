@@ -1,0 +1,6 @@
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Application\bin\Debug\CleanArchMvc.Application.dll
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Application\bin\Debug\CleanArchMvc.Application.pdb
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Application\obj\Debug\CleanArchMvc.Application.csproj.AssemblyReference.cache
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Application\obj\Debug\CleanArchMvc.Application.csproj.CoreCompileInputs.cache
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Application\obj\Debug\CleanArchMvc.Application.dll
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Application\obj\Debug\CleanArchMvc.Application.pdb

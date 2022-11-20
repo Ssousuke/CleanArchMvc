@@ -1,0 +1,6 @@
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Infra.IoC\bin\Debug\CleanArchMvc.Infra.IoC.dll
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Infra.IoC\bin\Debug\CleanArchMvc.Infra.IoC.pdb
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Infra.IoC\obj\Debug\CleanArchMvc.Infra.IoC.csproj.AssemblyReference.cache
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Infra.IoC\obj\Debug\CleanArchMvc.Infra.IoC.csproj.CoreCompileInputs.cache
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Infra.IoC\obj\Debug\CleanArchMvc.Infra.IoC.dll
+C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Infra.IoC\obj\Debug\CleanArchMvc.Infra.IoC.pdb
