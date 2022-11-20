@@ -4,10 +4,7 @@ using CleanArchMvc.Domain.Validation;
 namespace CleanArchMvc.Domain.Entities
 {
     public sealed class Category : EntityBase
-    { 
-        public string Name { get; private set; }
-        public ICollection<Product> Products { get; set; }
-
+    {
         public Category(string name)
         {
             ValidateDomain(name);
@@ -19,6 +16,9 @@ namespace CleanArchMvc.Domain.Entities
             Id = id;
             ValidateDomain(name);
         }
+
+        public string Name { get; private set; }
+        public ICollection<Product> Products { get; set; }
 
         private void ValidateDomain(string name)
         {

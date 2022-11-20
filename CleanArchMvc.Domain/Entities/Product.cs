@@ -4,15 +4,6 @@ namespace CleanArchMvc.Domain.Entities
 {
     public sealed class Product : EntityBase
     {
-        public string Name { get; private set; }
-        public string Description { get; private set; }
-        public decimal Price { get; private set; }
-        public int Stock { get; private set; }
-        public string Image { get; private set; }
-        public int CategoryId { get; set; }
-        public Category Category { get;  set; }
-
-
         public Product(int id, string name, string description, decimal price, int stock, string image)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id value.");
@@ -24,6 +15,14 @@ namespace CleanArchMvc.Domain.Entities
         {
             ValidateDomain(name, description, price, stock, image);
         }
+
+        public string Name { get; private set; }
+        public string Description { get; private set; }
+        public decimal Price { get; private set; }
+        public int Stock { get; private set; }
+        public string Image { get; private set; }
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
 
         public void ValidateDomain(string name, string description, decimal price, int stock, string image)
         {

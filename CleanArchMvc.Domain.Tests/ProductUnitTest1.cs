@@ -1,4 +1,5 @@
 using CleanArchMvc.Domain.Entities;
+using CleanArchMvc.Domain.Validation;
 using FluentAssertions;
 using Xunit;
 
@@ -11,7 +12,7 @@ public class ProductUnitTest1
     {
         Action action = () => new Product(1, "Smart TV", "TV Description", 2000, 10, "test-product.jpg");
         action.Should()
-            .NotThrow<CleanArchMvc.Domain.Validation.DomainExceptionValidation>();
+            .NotThrow<DomainExceptionValidation>();
     }
 
     [Fact]
@@ -19,7 +20,7 @@ public class ProductUnitTest1
     {
         Action action = () => new Product(-1, "Smart TV", "TV Description", 2000, 10, "test-product.jpg");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<DomainExceptionValidation>()
             .WithMessage("Invalid Id value.");
     }
 
@@ -28,7 +29,7 @@ public class ProductUnitTest1
     {
         Action action = () => new Product(1, "TV", "TV Description", 2000, 10, "test-product.jpg");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<DomainExceptionValidation>()
             .WithMessage("Invalid name, to short minimum 3 characters");
     }
 
@@ -44,7 +45,7 @@ public class ProductUnitTest1
             "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing" +
             " software like Aldus PageMaker including versions of Lorem Ipsum.jpg");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<DomainExceptionValidation>()
             .WithMessage("invalid image name, to long, maximum is 250 character");
     }
 
@@ -54,20 +55,20 @@ public class ProductUnitTest1
     {
         Action action = () => new Product(1, "TV Smart", "TV Description", 2000, value, "test-product.jpg");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<DomainExceptionValidation>()
             .WithMessage("Invalid stock value");
     }
-    
+
     [Theory]
     [InlineData(-10)]
     public void CreateProduct_InvalidPriceValue_DomainExceptionNegativeValue(int value)
     {
         Action action = () => new Product(1, "TV Smart", "TV Description", value, 10, "test-product.jpg");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<DomainExceptionValidation>()
             .WithMessage("Invalid price value");
     }
-    
+
     [Fact]
     public void CreateProduct_WithNullImageName_NoNullReferenceException()
     {

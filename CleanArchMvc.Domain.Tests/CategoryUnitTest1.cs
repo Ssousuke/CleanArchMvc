@@ -1,4 +1,5 @@
 using CleanArchMvc.Domain.Entities;
+using CleanArchMvc.Domain.Validation;
 using FluentAssertions;
 using Xunit;
 
@@ -11,7 +12,7 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(1, "Smart TV");
         action.Should()
-            .NotThrow<CleanArchMvc.Domain.Validation.DomainExceptionValidation>();
+            .NotThrow<DomainExceptionValidation>();
     }
 
     [Fact(DisplayName = "Create category with negative id value")]
@@ -19,7 +20,7 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(-1, "Smart TV");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<DomainExceptionValidation>()
             .WithMessage("Invalid Id");
     }
 
@@ -28,7 +29,7 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(1, "TV");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<DomainExceptionValidation>()
             .WithMessage("Invalid name, to short minimum 3 characters");
     }
 
@@ -37,7 +38,7 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(1, "");
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<DomainExceptionValidation>()
             .WithMessage("Invalid name.Name is required");
     }
 
@@ -46,7 +47,7 @@ public class CategoryUnitTest1
     {
         Action action = () => new Category(1, null);
         action.Should()
-            .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+            .Throw<DomainExceptionValidation>()
             .WithMessage("Invalid name.Name is required");
     }
 }
