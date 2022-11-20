@@ -1,6 +1,0 @@
-C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Domain\bin\Debug\CleanArchMvc.Domain.dll
-C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Domain\bin\Debug\CleanArchMvc.Domain.pdb
-C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Domain\obj\Debug\CleanArchMvc.Domain.csproj.AssemblyReference.cache
-C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Domain\obj\Debug\CleanArchMvc.Domain.csproj.CoreCompileInputs.cache
-C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Domain\obj\Debug\CleanArchMvc.Domain.dll
-C:\Users\china\RiderProjects\CleanArchMvc\CleanArchMvc.Domain\obj\Debug\CleanArchMvc.Domain.pdb
